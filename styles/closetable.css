@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+body {
+    background-color: #f8fafc;
+    padding: 24px;
+    padding-bottom: 100px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+    padding: 0 4px;
+}
+
+.table-number {
+    font-size: 28px;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.items-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.item-card {
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.item-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+
+.item-name {
+    font-weight: 600;
+    font-size: 18px;
+    color: #1e293b;
+}
+
+.item-category {
+    font-size: 14px;
+    color: #64748b;
+    margin-top: 4px;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: #f1f5f9;
+    padding: 8px 16px;
+    border-radius: 12px;
+}
+
+.quantity-btn {
+    width: 28px;
+    height: 28px;
+    border: none;
+    border-radius: 8px;
+    background: #0ea5e9;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+}
+
+.quantity-btn:hover {
+    background: #0284c7;
+}
+
+.quantity {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1e293b;
+    min-width: 20px;
+    text-align: center;
+}
+
+.item-price {
+    font-size: 18px;
+    color: #0ea5e9;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 20px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 -1px 3px rgba(0,0,0,0.05);
+    backdrop-filter: blur(8px);
+}
+
+.total-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.total-label {
+    font-size: 14px;
+    color: #64748b;
+}
+
+.total-price {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.close-btn {
+    padding: 12px 24px;
+    background: #0ea5e9;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.close-btn:hover {
+    background: #0284c7;
+}

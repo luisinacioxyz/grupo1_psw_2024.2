@@ -1,0 +1,52 @@
+{
+    "ordersData": [
+      {
+        "id": 1,
+        "table": "5",
+        "items": [
+          { "name": "Margherita Pizza","category": "Main Course", "price": 14.99,"quantity": 2 },
+          { "name": "Caesar Salad","category": "Starters", "price": 8.99,"quantity": 1 }
+        ],
+        "time": "14:30",
+        "observation": "Extra cheese on pizza",
+        "requestTime": "2024-11-19T14:30:00"
+      },
+      {
+        "id": 2,
+        "table": "3",
+        "items": [
+          { "name": "Beef Burger","category": "Main Course", "price": 12.99,"quantity": 1 },
+          { "name": "French Fries","category": "Starters", "price": 7.99,"quantity": 2 },
+          { "name": "Coke","category": "Beverages", "price": 5.99,"quantity": 2 }
+        ],
+        "time": "14:35",
+        "observation": "No onions in burger",
+        "requestTime": "2024-11-19T14:35:00"
+      }
+    ],
+
+    "activeTables": [
+        { "id": "1", "number": "1", "openTime": "2024-11-20T14:30:00" },
+        { "id": "2", "number": "2", "openTime": "2024-11-20T15:00:00" },
+        { "id": "3", "number": "3", "openTime": "2024-11-20T15:15:00" },
+        { "id": "4", "number": "4", "openTime": "2024-11-20T15:30:00" },
+        { "id": "5", "number": "5", "openTime": "2024-11-20T16:00:00" },
+        { "id": "6", "number": "6", "openTime": "2024-11-20T16:30:00" }
+      ],
+
+      "pedidoMesa":[{
+        "id": 1,
+        "items": [
+        { "name": "Margherita Pizza", "category": "Main Course", "price": 14.99, "quantity": 2 },
+        { "name": "Caesar Salad", "category": "Starters", "price": 8.99, "quantity": 1 }
+      ]
+            },
+            {
+        "id": 2,
+        "items": [
+        { "name": "Pepperoni Pizza", "category": "Main Course", "price": 21.99, "quantity": 2 },
+        { "name": "Caprese's Salad", "category": "Starters", "price": 5.99, "quantity": 1 }
+      ]}
+]
+
+  }

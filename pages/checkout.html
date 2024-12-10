@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Active Tables</title>
+    <link rel="stylesheet" href="../styles/checkout.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Active Tables</h1>
+            <div class="active-count">
+                <span id="table-count">0</span> Tables Active
+            </div>
+        </div>
+        <div class="tables-grid" id="tables-container">
+            <!-- Tables will be inserted here by JavaScript -->
+        </div>
+    </div>
+     <!-- Sidebar -->
+     <div class="sidebar" id="sidebar">
+        <a onclick="navigateTo('filateste.html', event)" class="nav-link"><i class="fas fa-list"></i> Fila</a>
+        <a onclick="navigateTo('checkout.html', event)" class="nav-link"><i class="fas fa-table"></i> Mesas</a>
+      </div>
+    
+      <!-- Toggle Button -->
+      <button class="toggle-btn" id="toggle-btn"><i class="fas fa-bars"></i></button>
+    
+       <script>
+        // JavaScript para abrir/fechar a barra lateral
+        const sidebar = document.getElementById('sidebar');
+        const toggleBtn = document.getElementById('toggle-btn');
+    
+        toggleBtn.addEventListener('click', () => {
+          sidebar.classList.toggle('collapsed');
+        });
+      </script>
+    <script src="../scripts/checkout.js"></script>
+</body>
+</html>
